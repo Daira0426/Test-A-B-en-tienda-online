@@ -8,31 +8,31 @@ El objetivo fue priorizar hipótesis para aumentar ingresos, ejecutar un test A/
 
 Parte 1 – Priorización de hipótesis:
 
-Evaluación de 9 hipótesis usando los frameworks ICE (Impact, Confidence, Effort) y RICE (Reach, Impact, Confidence, Effort).
+* Evaluación de 9 hipótesis usando los frameworks ICE (Impact, Confidence, Effort) y RICE (Reach, Impact, Confidence, Effort).
 
-Comparación de resultados de ICE vs. RICE y explicación de los cambios en la priorización.
+* Comparación de resultados de ICE vs. RICE y explicación de los cambios en la priorización.
 
 Parte 2 – Análisis de test A/B:
 
-Limpieza y preprocesamiento de datos (visitas y pedidos).
+* Limpieza y preprocesamiento de datos (visitas y pedidos).
 
-Representación gráfica de:
+* Representación gráfica de:
 
-Ingreso acumulado por grupo.
+    * Ingreso acumulado por grupo.
 
-Tamaño promedio de pedido acumulado por grupo.
+    * Tamaño promedio de pedido acumulado por grupo.
 
-Diferencia relativa en tamaño promedio de pedido entre grupo B y grupo A.
+    * Diferencia relativa en tamaño promedio de pedido entre grupo B y grupo A.
 
-Tasa de conversión diaria por grupo.
+    * Tasa de conversión diaria por grupo.
 
-Distribución de pedidos por usuario y precios de pedidos (gráficos de dispersión).
+    * Distribución de pedidos por usuario y precios de pedidos (gráficos de dispersión).
 
-Cálculo de percentiles 95 y 99 para detectar anomalías.
+* Cálculo de percentiles 95 y 99 para detectar anomalías.
 
-Evaluación de la significancia estadística de las diferencias entre grupos (con y sin filtrado de outliers).
+* Evaluación de la significancia estadística de las diferencias entre grupos (con y sin filtrado de outliers).
 
-Toma de decisiones basada en los resultados: determinar si continuar la prueba, detenerla o elegir un grupo como líder.
+* Toma de decisiones basada en los resultados: determinar si continuar la prueba, detenerla o elegir un grupo como líder.
 
 ## 🔧 Herramientas
 
@@ -46,19 +46,19 @@ Toma de decisiones basada en los resultados: determinar si continuar la prueba, 
 
 ## Resultados
 
-Priorización clara de hipótesis según frameworks ICE y RICE, con cambios significativos al incorporar el alcance (Reach) en RICE.
+* Priorización clara de hipótesis según frameworks ICE y RICE, con cambios significativos al incorporar el alcance (Reach) en RICE.
 
-Visualización de ingresos y tamaños de pedidos permitió identificar patrones de comportamiento por grupo.
+* Visualización de ingresos y tamaños de pedidos permitió identificar patrones de comportamiento por grupo.
 
-Tasa de conversión y tamaño promedio de pedido mostraron diferencias entre grupos, con identificación de posibles anomalías.
+* Tasa de conversión y tamaño promedio de pedido mostraron diferencias entre grupos, con identificación de posibles anomalías.
 
-Cálculo de significancia estadística ayudó a fundamentar la decisión final sobre el test A/B.
+* Cálculo de significancia estadística ayudó a fundamentar la decisión final sobre el test A/B.
 
 ## Conclusiones
 
-El valor p de 0.960 indica que no hay evidencia estadísticamente significativa para rechazar la hipótesis nula, que asume que las distribuciones de los tamaños de pedido (ingresos) en ambos grupos son iguales.
+* El valor p de 0.960 indica que no hay evidencia estadísticamente significativa para rechazar la hipótesis nula, que asume que las distribuciones de los tamaños de pedido (ingresos) en ambos grupos son iguales.
 
-Aunque el grupo B muestra un ingreso promedio 23.5% mayor que el grupo A, esta diferencia no es estadísticamente significativa, como lo confirma el valor p elevado.
+* Aunque el grupo B muestra un ingreso promedio 23.5% mayor que el grupo A, esta diferencia no es estadísticamente significativa, como lo confirma el valor p elevado.
 
 Recomendación: detener la prueba, ya que no hay diferencia real entre los grupos. Continuar la prueba no tiene sentido porque la probabilidad de que el grupo B sea mejor que el grupo A es casi inexistente.
 
